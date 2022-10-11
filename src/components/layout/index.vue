@@ -23,9 +23,7 @@ c = undefined
 // c = null
 
 const onClickLeft = () => {
-    ``
     console.log('onclick');
-
 }
 </script>
 
