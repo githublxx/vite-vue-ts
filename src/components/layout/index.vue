@@ -6,14 +6,19 @@
 </template>
 
 <script setup lang="ts">
+import type { NavBarProps } from 'vant';
+
 import { ref } from "vue"
+const number1 = ref<number>(1)
+console.log(number1);
+
 let tup1: [string, number, boolean]
 tup1 = ['小明', 12, false]
 
 let x: any = 'hah'
-x.ifItExit()
-x.toFixed()
-console.log(x.toFixed());
+// x.ifItExit()
+// x.toFixed()
+// console.log(x.toFixed());
 
 let b: (string | number | boolean)[]
 b = ['2121', 2, false,]
@@ -22,7 +27,9 @@ let c: void
 c = undefined
 // c = null
 
-const onClickLeft = () => {
+const onClickLeft = (e: MouseEvent): void => {
+    console.log(e);
+
     console.log('onclick');
 }
 </script>
