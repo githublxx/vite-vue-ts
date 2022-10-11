@@ -12,6 +12,11 @@ import { ref } from "vue"
 const number1 = ref<number>(1)
 console.log(number1);
 
+const aa = ref<boolean>(false);
+console.log(aa);
+
+
+
 let tup1: [string, number, boolean]
 tup1 = ['小明', 12, false]
 
